@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C115F6951D510AD50053637D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115F6941D510AD50053637D /* AppDelegate.swift */; };
+		C115F69A1D510AD50053637D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C115F6981D510AD50053637D /* Main.storyboard */; };
+		C115F69D1D510AD50053637D /* ViperFlow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C115F69B1D510AD50053637D /* ViperFlow.xcdatamodeld */; };
+		C115F69F1D510AD50053637D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C115F69E1D510AD50053637D /* Assets.xcassets */; };
+		C115F6A21D510AD50053637D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C115F6A01D510AD50053637D /* LaunchScreen.storyboard */; };
+		C115F6B61D510CA40053637D /* viper_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C115F6B51D510CA40053637D /* viper_icon.jpg */; };
+		C115F6B91D510CEC0053637D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115F6B81D510CEC0053637D /* CoreDataStack.swift */; };
+		C115F6BB1D510D530053637D /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115F6BA1D510D530053637D /* AppDependencies.swift */; };
+		C1EC9D891D5338AE006C8C40 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D881D5338AE006C8C40 /* MainViewController.swift */; };
+		C1EC9D8B1D5338E3006C8C40 /* MainViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D8A1D5338E3006C8C40 /* MainViewInterface.swift */; };
+		C1EC9D8D1D53392B006C8C40 /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D8C1D53392B006C8C40 /* PresentedViewController.swift */; };
+		C1EC9D8F1D533939006C8C40 /* PresentedViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D8E1D533939006C8C40 /* PresentedViewInterface.swift */; };
+		C1EC9D911D533992006C8C40 /* PushedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D901D533992006C8C40 /* PushedViewController.swift */; };
+		C1EC9D931D5339A2006C8C40 /* PushedViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D921D5339A2006C8C40 /* PushedViewInterface.swift */; };
+		C1EC9D951D5339DD006C8C40 /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D941D5339DD006C8C40 /* CustomTransitionViewController.swift */; };
+		C1EC9D971D5339ED006C8C40 /* CustomTransitionViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D961D5339ED006C8C40 /* CustomTransitionViewInterface.swift */; };
+		C1EC9D9A1D533A7E006C8C40 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D981D533A7E006C8C40 /* RootWireframe.swift */; };
+		C1EC9D9B1D533A7E006C8C40 /* VIPERWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D991D533A7E006C8C40 /* VIPERWireframeProtocol.swift */; };
+		C1EC9D9D1D533AB2006C8C40 /* SBComponentNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D9C1D533AB2006C8C40 /* SBComponentNames.swift */; };
+		C1EC9D9F1D534252006C8C40 /* MainInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9D9E1D534252006C8C40 /* MainInterface.swift */; };
+		C1EC9DA11D5342CB006C8C40 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DA01D5342CB006C8C40 /* MainPresenter.swift */; };
+		C1EC9DA31D53435D006C8C40 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DA21D53435D006C8C40 /* MainWireframe.swift */; };
+		C1EC9DA51D534379006C8C40 /* MainInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DA41D534379006C8C40 /* MainInteractorInterface.swift */; };
+		C1EC9DA71D5343AC006C8C40 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DA61D5343AC006C8C40 /* MainInteractor.swift */; };
+		C1EC9DA91D53441F006C8C40 /* MainInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DA81D53441F006C8C40 /* MainInteractorDelegate.swift */; };
+		C1EC9DAB1D534630006C8C40 /* PresentedInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DAA1D534630006C8C40 /* PresentedInterface.swift */; };
+		C1EC9DAD1D53464C006C8C40 /* PresentedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DAC1D53464C006C8C40 /* PresentedPresenter.swift */; };
+		C1EC9DAF1D5346BE006C8C40 /* PresentedWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DAE1D5346BE006C8C40 /* PresentedWireframe.swift */; };
+		C1EC9DB11D5346E6006C8C40 /* PresentedInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DB01D5346E6006C8C40 /* PresentedInteractorInterface.swift */; };
+		C1EC9DB31D5346FE006C8C40 /* PresentedInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DB21D5346FE006C8C40 /* PresentedInteractorDelegate.swift */; };
+		C1EC9DB51D53471D006C8C40 /* PresentedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DB41D53471D006C8C40 /* PresentedInteractor.swift */; };
+		C1EC9DBA1D5395CF006C8C40 /* PushedInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DB91D5395CF006C8C40 /* PushedInterface.swift */; };
+		C1EC9DBC1D5395E7006C8C40 /* PushedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DBB1D5395E7006C8C40 /* PushedPresenter.swift */; };
+		C1EC9DBE1D53960A006C8C40 /* PushedInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DBD1D53960A006C8C40 /* PushedInteractorInterface.swift */; };
+		C1EC9DC01D539620006C8C40 /* PushedInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DBF1D539620006C8C40 /* PushedInteractorDelegate.swift */; };
+		C1EC9DC21D53963C006C8C40 /* PushedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DC11D53963C006C8C40 /* PushedInteractor.swift */; };
+		C1EC9DC41D5396A6006C8C40 /* PushedWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DC31D5396A6006C8C40 /* PushedWireframe.swift */; };
+		C1EC9DC61D539C22006C8C40 /* CustomizedInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DC51D539C22006C8C40 /* CustomizedInterface.swift */; };
+		C1EC9DC81D539C3E006C8C40 /* CustomizedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DC71D539C3E006C8C40 /* CustomizedPresenter.swift */; };
+		C1EC9DCA1D539C73006C8C40 /* CustomizedInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DC91D539C73006C8C40 /* CustomizedInteractorInterface.swift */; };
+		C1EC9DCC1D539C85006C8C40 /* CustomizedInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DCB1D539C85006C8C40 /* CustomizedInteractorDelegate.swift */; };
+		C1EC9DCE1D539C9E006C8C40 /* CustomizedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DCD1D539C9E006C8C40 /* CustomizedInteractor.swift */; };
+		C1EC9DD01D539D02006C8C40 /* CustomizedWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DCF1D539D02006C8C40 /* CustomizedWireframe.swift */; };
+		C1EC9DD71D53A1EA006C8C40 /* DismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DD51D53A1EA006C8C40 /* DismissTransition.swift */; };
+		C1EC9DD81D53A1EA006C8C40 /* PresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EC9DD61D53A1EA006C8C40 /* PresentTransition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C115F6911D510AD50053637D /* ViperFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C115F6941D510AD50053637D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C115F6991D510AD50053637D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C115F69C1D510AD50053637D /* ViperFlow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperFlow.xcdatamodel; sourceTree = "<group>"; };
+		C115F69E1D510AD50053637D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C115F6A11D510AD50053637D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C115F6A31D510AD50053637D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C115F6B51D510CA40053637D /* viper_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = viper_icon.jpg; path = Resources/viper_icon.jpg; sourceTree = "<group>"; };
+		C115F6B81D510CEC0053637D /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = "Classes/Common/Data Storage/CoreDataStack.swift"; sourceTree = "<group>"; };
+		C115F6BA1D510D530053637D /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDependencies.swift; path = Classes/AppDependencies.swift; sourceTree = "<group>"; };
+		C1EC9D881D5338AE006C8C40 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C1EC9D8A1D5338E3006C8C40 /* MainViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewInterface.swift; sourceTree = "<group>"; };
+		C1EC9D8C1D53392B006C8C40 /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
+		C1EC9D8E1D533939006C8C40 /* PresentedViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewInterface.swift; sourceTree = "<group>"; };
+		C1EC9D901D533992006C8C40 /* PushedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedViewController.swift; sourceTree = "<group>"; };
+		C1EC9D921D5339A2006C8C40 /* PushedViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedViewInterface.swift; sourceTree = "<group>"; };
+		C1EC9D941D5339DD006C8C40 /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionViewController.swift; sourceTree = "<group>"; };
+		C1EC9D961D5339ED006C8C40 /* CustomTransitionViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionViewInterface.swift; sourceTree = "<group>"; };
+		C1EC9D981D533A7E006C8C40 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Classes/Common/View/RootWireframe.swift; sourceTree = "<group>"; };
+		C1EC9D991D533A7E006C8C40 /* VIPERWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VIPERWireframeProtocol.swift; path = Classes/Common/View/VIPERWireframeProtocol.swift; sourceTree = "<group>"; };
+		C1EC9D9C1D533AB2006C8C40 /* SBComponentNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBComponentNames.swift; path = Classes/Common/View/SBComponentNames.swift; sourceTree = "<group>"; };
+		C1EC9D9E1D534252006C8C40 /* MainInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInterface.swift; sourceTree = "<group>"; };
+		C1EC9DA01D5342CB006C8C40 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		C1EC9DA21D53435D006C8C40 /* MainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		C1EC9DA41D534379006C8C40 /* MainInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractorInterface.swift; sourceTree = "<group>"; };
+		C1EC9DA61D5343AC006C8C40 /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		C1EC9DA81D53441F006C8C40 /* MainInteractorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractorDelegate.swift; sourceTree = "<group>"; };
+		C1EC9DAA1D534630006C8C40 /* PresentedInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedInterface.swift; sourceTree = "<group>"; };
+		C1EC9DAC1D53464C006C8C40 /* PresentedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedPresenter.swift; sourceTree = "<group>"; };
+		C1EC9DAE1D5346BE006C8C40 /* PresentedWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedWireframe.swift; sourceTree = "<group>"; };
+		C1EC9DB01D5346E6006C8C40 /* PresentedInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedInteractorInterface.swift; sourceTree = "<group>"; };
+		C1EC9DB21D5346FE006C8C40 /* PresentedInteractorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedInteractorDelegate.swift; sourceTree = "<group>"; };
+		C1EC9DB41D53471D006C8C40 /* PresentedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedInteractor.swift; sourceTree = "<group>"; };
+		C1EC9DB91D5395CF006C8C40 /* PushedInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedInterface.swift; sourceTree = "<group>"; };
+		C1EC9DBB1D5395E7006C8C40 /* PushedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedPresenter.swift; sourceTree = "<group>"; };
+		C1EC9DBD1D53960A006C8C40 /* PushedInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedInteractorInterface.swift; sourceTree = "<group>"; };
+		C1EC9DBF1D539620006C8C40 /* PushedInteractorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedInteractorDelegate.swift; sourceTree = "<group>"; };
+		C1EC9DC11D53963C006C8C40 /* PushedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedInteractor.swift; sourceTree = "<group>"; };
+		C1EC9DC31D5396A6006C8C40 /* PushedWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushedWireframe.swift; sourceTree = "<group>"; };
+		C1EC9DC51D539C22006C8C40 /* CustomizedInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedInterface.swift; sourceTree = "<group>"; };
+		C1EC9DC71D539C3E006C8C40 /* CustomizedPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedPresenter.swift; sourceTree = "<group>"; };
+		C1EC9DC91D539C73006C8C40 /* CustomizedInteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedInteractorInterface.swift; sourceTree = "<group>"; };
+		C1EC9DCB1D539C85006C8C40 /* CustomizedInteractorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedInteractorDelegate.swift; sourceTree = "<group>"; };
+		C1EC9DCD1D539C9E006C8C40 /* CustomizedInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedInteractor.swift; sourceTree = "<group>"; };
+		C1EC9DCF1D539D02006C8C40 /* CustomizedWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizedWireframe.swift; sourceTree = "<group>"; };
+		C1EC9DD51D53A1EA006C8C40 /* DismissTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissTransition.swift; sourceTree = "<group>"; };
+		C1EC9DD61D53A1EA006C8C40 /* PresentTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentTransition.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C115F68E1D510AD50053637D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C115F6881D510AD50053637D = {
+			isa = PBXGroup;
+			children = (
+				C115F6931D510AD50053637D /* ViperFlow */,
+				C115F6921D510AD50053637D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C115F6921D510AD50053637D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6911D510AD50053637D /* ViperFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C115F6931D510AD50053637D /* ViperFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6AA1D510AFA0053637D /* Resources */,
+				C115F6A91D510AED0053637D /* SupportingFiles */,
+				C115F6B71D510CAD0053637D /* ___________________ */,
+				C115F6AD1D510B220053637D /* Classes */,
+			);
+			path = ViperFlow;
+			sourceTree = "<group>";
+		};
+		C115F6A91D510AED0053637D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6A31D510AD50053637D /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C115F6AA1D510AFA0053637D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6981D510AD50053637D /* Main.storyboard */,
+				C115F6A01D510AD50053637D /* LaunchScreen.storyboard */,
+				C115F69E1D510AD50053637D /* Assets.xcassets */,
+				C115F6B51D510CA40053637D /* viper_icon.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C115F6AD1D510B220053637D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6AE1D510B380053637D /* Common */,
+				C115F6AF1D510B6B0053637D /* Use Cases (VIPER modules) */,
+				C115F6941D510AD50053637D /* AppDelegate.swift */,
+				C115F6BA1D510D530053637D /* AppDependencies.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C115F6AE1D510B380053637D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6B31D510B9E0053637D /* Constants */,
+				C115F6B21D510B940053637D /* Models */,
+				C115F6B11D510B850053637D /* Data Storage */,
+				C115F6B01D510B800053637D /* View */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		C115F6AF1D510B6B0053637D /* Use Cases (VIPER modules) */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6D81D510E5D0053637D /* 4_ViewCustomized */,
+				C115F6CF1D510E5D0053637D /* 3_ViewPushed */,
+				C115F6C61D510E5D0053637D /* 2_ViewPresented */,
+				C115F6BC1D510E460053637D /* 1_Main */,
+			);
+			name = "Use Cases (VIPER modules)";
+			sourceTree = "<group>";
+		};
+		C115F6B01D510B800053637D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9D981D533A7E006C8C40 /* RootWireframe.swift */,
+				C1EC9D991D533A7E006C8C40 /* VIPERWireframeProtocol.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C115F6B11D510B850053637D /* Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C115F69B1D510AD50053637D /* ViperFlow.xcdatamodeld */,
+				C115F6B41D510BA80053637D /* Managed Objects */,
+				C115F6B81D510CEC0053637D /* CoreDataStack.swift */,
+			);
+			name = "Data Storage";
+			sourceTree = "<group>";
+		};
+		C115F6B21D510B940053637D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C115F6B31D510B9E0053637D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9D9C1D533AB2006C8C40 /* SBComponentNames.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		C115F6B41D510BA80053637D /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		C115F6B71D510CAD0053637D /* ___________________ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "___________________";
+			sourceTree = "<group>";
+		};
+		C115F6BC1D510E460053637D /* 1_Main */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6E11D510E980053637D /* Business Logic */,
+				C115F6E41D510E980053637D /* UI Logic */,
+			);
+			name = 1_Main;
+			sourceTree = "<group>";
+		};
+		C115F6C61D510E5D0053637D /* 2_ViewPresented */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6C71D510E5D0053637D /* Business Logic */,
+				C115F6CA1D510E5D0053637D /* UI Logic */,
+			);
+			name = 2_ViewPresented;
+			path = "Classes/Use Cases (VIPER Modules)/2_ViewPresented";
+			sourceTree = "<group>";
+		};
+		C115F6C71D510E5D0053637D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6C81D510E5D0053637D /* Entities */,
+				C115F6C91D510E5D0053637D /* Interactor */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		C115F6C81D510E5D0053637D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C115F6C91D510E5D0053637D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9DB01D5346E6006C8C40 /* PresentedInteractorInterface.swift */,
+				C1EC9DB21D5346FE006C8C40 /* PresentedInteractorDelegate.swift */,
+				C1EC9DB41D53471D006C8C40 /* PresentedInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C115F6CA1D510E5D0053637D /* UI Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6CB1D510E5D0053637D /* Presenter */,
+				C115F6CC1D510E5D0053637D /* View */,
+				C115F6CD1D510E5D0053637D /* Wireframe */,
+			);
+			path = "UI Logic";
+			sourceTree = "<group>";
+		};
+		C115F6CB1D510E5D0053637D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9DAA1D534630006C8C40 /* PresentedInterface.swift */,
+				C1EC9DAC1D53464C006C8C40 /* PresentedPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C115F6CC1D510E5D0053637D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9D8E1D533939006C8C40 /* PresentedViewInterface.swift */,
+				C1EC9D8C1D53392B006C8C40 /* PresentedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C115F6CD1D510E5D0053637D /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6CE1D510E5D0053637D /* Transitions */,
+				C1EC9DAE1D5346BE006C8C40 /* PresentedWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		C115F6CE1D510E5D0053637D /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		C115F6CF1D510E5D0053637D /* 3_ViewPushed */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6D01D510E5D0053637D /* Business Logic */,
+				C115F6D31D510E5D0053637D /* UI Logic */,
+			);
+			name = 3_ViewPushed;
+			path = "Classes/Use Cases (VIPER Modules)/3_ViewPushed";
+			sourceTree = "<group>";
+		};
+		C115F6D01D510E5D0053637D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6D11D510E5D0053637D /* Entities */,
+				C115F6D21D510E5D0053637D /* Interactor */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		C115F6D11D510E5D0053637D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C115F6D21D510E5D0053637D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9DBD1D53960A006C8C40 /* PushedInteractorInterface.swift */,
+				C1EC9DBF1D539620006C8C40 /* PushedInteractorDelegate.swift */,
+				C1EC9DC11D53963C006C8C40 /* PushedInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C115F6D31D510E5D0053637D /* UI Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6D41D510E5D0053637D /* Presenter */,
+				C115F6D51D510E5D0053637D /* View */,
+				C115F6D61D510E5D0053637D /* Wireframe */,
+			);
+			path = "UI Logic";
+			sourceTree = "<group>";
+		};
+		C115F6D41D510E5D0053637D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9DB91D5395CF006C8C40 /* PushedInterface.swift */,
+				C1EC9DBB1D5395E7006C8C40 /* PushedPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C115F6D51D510E5D0053637D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9D921D5339A2006C8C40 /* PushedViewInterface.swift */,
+				C1EC9D901D533992006C8C40 /* PushedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C115F6D61D510E5D0053637D /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6D71D510E5D0053637D /* Transitions */,
+				C1EC9DC31D5396A6006C8C40 /* PushedWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		C115F6D71D510E5D0053637D /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		C115F6D81D510E5D0053637D /* 4_ViewCustomized */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6D91D510E5D0053637D /* Business Logic */,
+				C115F6DC1D510E5D0053637D /* UI Logic */,
+			);
+			name = 4_ViewCustomized;
+			path = "Classes/Use Cases (VIPER Modules)/4_ViewCustomized";
+			sourceTree = "<group>";
+		};
+		C115F6D91D510E5D0053637D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6DA1D510E5D0053637D /* Entities */,
+				C115F6DB1D510E5D0053637D /* Interactor */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		C115F6DA1D510E5D0053637D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C115F6DB1D510E5D0053637D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9DC91D539C73006C8C40 /* CustomizedInteractorInterface.swift */,
+				C1EC9DCB1D539C85006C8C40 /* CustomizedInteractorDelegate.swift */,
+				C1EC9DCD1D539C9E006C8C40 /* CustomizedInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C115F6DC1D510E5D0053637D /* UI Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6DD1D510E5D0053637D /* Presenter */,
+				C115F6DE1D510E5D0053637D /* View */,
+				C115F6DF1D510E5D0053637D /* Wireframe */,
+			);
+			path = "UI Logic";
+			sourceTree = "<group>";
+		};
+		C115F6DD1D510E5D0053637D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9DC51D539C22006C8C40 /* CustomizedInterface.swift */,
+				C1EC9DC71D539C3E006C8C40 /* CustomizedPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C115F6DE1D510E5D0053637D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9D961D5339ED006C8C40 /* CustomTransitionViewInterface.swift */,
+				C1EC9D941D5339DD006C8C40 /* CustomTransitionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C115F6DF1D510E5D0053637D /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6E01D510E5D0053637D /* Transitions */,
+				C1EC9DCF1D539D02006C8C40 /* CustomizedWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		C115F6E01D510E5D0053637D /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9DD51D53A1EA006C8C40 /* DismissTransition.swift */,
+				C1EC9DD61D53A1EA006C8C40 /* PresentTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		C115F6E11D510E980053637D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6E21D510E980053637D /* Entities */,
+				C115F6E31D510E980053637D /* Interactor */,
+			);
+			name = "Business Logic";
+			path = "Classes/Use Cases (VIPER Modules)/1_Main/Business Logic";
+			sourceTree = "<group>";
+		};
+		C115F6E21D510E980053637D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C115F6E31D510E980053637D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9DA41D534379006C8C40 /* MainInteractorInterface.swift */,
+				C1EC9DA81D53441F006C8C40 /* MainInteractorDelegate.swift */,
+				C1EC9DA61D5343AC006C8C40 /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C115F6E41D510E980053637D /* UI Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6E51D510E980053637D /* Presenter */,
+				C115F6E61D510E980053637D /* View */,
+				C115F6E71D510E980053637D /* Wireframe */,
+			);
+			name = "UI Logic";
+			path = "Classes/Use Cases (VIPER Modules)/1_Main/UI Logic";
+			sourceTree = "<group>";
+		};
+		C115F6E51D510E980053637D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9D9E1D534252006C8C40 /* MainInterface.swift */,
+				C1EC9DA01D5342CB006C8C40 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C115F6E61D510E980053637D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1EC9D8A1D5338E3006C8C40 /* MainViewInterface.swift */,
+				C1EC9D881D5338AE006C8C40 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C115F6E71D510E980053637D /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				C115F6E81D510E980053637D /* Transitions */,
+				C1EC9DA21D53435D006C8C40 /* MainWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		C115F6E81D510E980053637D /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C115F6901D510AD50053637D /* ViperFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C115F6A61D510AD50053637D /* Build configuration list for PBXNativeTarget "ViperFlow" */;
+			buildPhases = (
+				C115F68D1D510AD50053637D /* Sources */,
+				C115F68E1D510AD50053637D /* Frameworks */,
+				C115F68F1D510AD50053637D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViperFlow;
+			productName = ViperFlow;
+			productReference = C115F6911D510AD50053637D /* ViperFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C115F6891D510AD50053637D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = marta;
+				TargetAttributes = {
+					C115F6901D510AD50053637D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = C115F68C1D510AD50053637D /* Build configuration list for PBXProject "ViperFlow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C115F6881D510AD50053637D;
+			productRefGroup = C115F6921D510AD50053637D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C115F6901D510AD50053637D /* ViperFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C115F68F1D510AD50053637D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C115F6A21D510AD50053637D /* LaunchScreen.storyboard in Resources */,
+				C115F69F1D510AD50053637D /* Assets.xcassets in Resources */,
+				C115F69A1D510AD50053637D /* Main.storyboard in Resources */,
+				C115F6B61D510CA40053637D /* viper_icon.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C115F68D1D510AD50053637D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EC9D911D533992006C8C40 /* PushedViewController.swift in Sources */,
+				C1EC9DD71D53A1EA006C8C40 /* DismissTransition.swift in Sources */,
+				C1EC9DC01D539620006C8C40 /* PushedInteractorDelegate.swift in Sources */,
+				C1EC9D951D5339DD006C8C40 /* CustomTransitionViewController.swift in Sources */,
+				C1EC9DBA1D5395CF006C8C40 /* PushedInterface.swift in Sources */,
+				C1EC9DC61D539C22006C8C40 /* CustomizedInterface.swift in Sources */,
+				C1EC9DCE1D539C9E006C8C40 /* CustomizedInteractor.swift in Sources */,
+				C1EC9DAB1D534630006C8C40 /* PresentedInterface.swift in Sources */,
+				C1EC9DA11D5342CB006C8C40 /* MainPresenter.swift in Sources */,
+				C1EC9DCC1D539C85006C8C40 /* CustomizedInteractorDelegate.swift in Sources */,
+				C1EC9DA71D5343AC006C8C40 /* MainInteractor.swift in Sources */,
+				C1EC9DA31D53435D006C8C40 /* MainWireframe.swift in Sources */,
+				C1EC9DC41D5396A6006C8C40 /* PushedWireframe.swift in Sources */,
+				C1EC9D931D5339A2006C8C40 /* PushedViewInterface.swift in Sources */,
+				C115F6BB1D510D530053637D /* AppDependencies.swift in Sources */,
+				C1EC9DBC1D5395E7006C8C40 /* PushedPresenter.swift in Sources */,
+				C1EC9DAD1D53464C006C8C40 /* PresentedPresenter.swift in Sources */,
+				C1EC9DC81D539C3E006C8C40 /* CustomizedPresenter.swift in Sources */,
+				C1EC9D9F1D534252006C8C40 /* MainInterface.swift in Sources */,
+				C1EC9D971D5339ED006C8C40 /* CustomTransitionViewInterface.swift in Sources */,
+				C1EC9DCA1D539C73006C8C40 /* CustomizedInteractorInterface.swift in Sources */,
+				C1EC9D9D1D533AB2006C8C40 /* SBComponentNames.swift in Sources */,
+				C115F6B91D510CEC0053637D /* CoreDataStack.swift in Sources */,
+				C1EC9DB11D5346E6006C8C40 /* PresentedInteractorInterface.swift in Sources */,
+				C1EC9D8D1D53392B006C8C40 /* PresentedViewController.swift in Sources */,
+				C1EC9DD81D53A1EA006C8C40 /* PresentTransition.swift in Sources */,
+				C1EC9DA51D534379006C8C40 /* MainInteractorInterface.swift in Sources */,
+				C1EC9DAF1D5346BE006C8C40 /* PresentedWireframe.swift in Sources */,
+				C1EC9DBE1D53960A006C8C40 /* PushedInteractorInterface.swift in Sources */,
+				C1EC9DC21D53963C006C8C40 /* PushedInteractor.swift in Sources */,
+				C1EC9DB31D5346FE006C8C40 /* PresentedInteractorDelegate.swift in Sources */,
+				C115F6951D510AD50053637D /* AppDelegate.swift in Sources */,
+				C1EC9D8B1D5338E3006C8C40 /* MainViewInterface.swift in Sources */,
+				C1EC9D9B1D533A7E006C8C40 /* VIPERWireframeProtocol.swift in Sources */,
+				C1EC9DA91D53441F006C8C40 /* MainInteractorDelegate.swift in Sources */,
+				C1EC9D8F1D533939006C8C40 /* PresentedViewInterface.swift in Sources */,
+				C115F69D1D510AD50053637D /* ViperFlow.xcdatamodeld in Sources */,
+				C1EC9DB51D53471D006C8C40 /* PresentedInteractor.swift in Sources */,
+				C1EC9D9A1D533A7E006C8C40 /* RootWireframe.swift in Sources */,
+				C1EC9DD01D539D02006C8C40 /* CustomizedWireframe.swift in Sources */,
+				C1EC9D891D5338AE006C8C40 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C115F6981D510AD50053637D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C115F6991D510AD50053637D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C115F6A01D510AD50053637D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C115F6A11D510AD50053637D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C115F6A41D510AD50053637D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C115F6A51D510AD50053637D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C115F6A71D510AD50053637D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ViperFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marta.ViperFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C115F6A81D510AD50053637D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ViperFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marta.ViperFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C115F68C1D510AD50053637D /* Build configuration list for PBXProject "ViperFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115F6A41D510AD50053637D /* Debug */,
+				C115F6A51D510AD50053637D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C115F6A61D510AD50053637D /* Build configuration list for PBXNativeTarget "ViperFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C115F6A71D510AD50053637D /* Debug */,
+				C115F6A81D510AD50053637D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C115F69B1D510AD50053637D /* ViperFlow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C115F69C1D510AD50053637D /* ViperFlow.xcdatamodel */,
+			);
+			currentVersion = C115F69C1D510AD50053637D /* ViperFlow.xcdatamodel */;
+			path = ViperFlow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C115F6891D510AD50053637D /* Project object */;
+}
